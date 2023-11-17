@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Your Superb Website</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      body {
+        padding-top: 56px;
+        background-color: #f8f9fa;
+      }
+
+      .navbar {
+        background-color: #007bff;
+        transition: background-color 0.5s ease;
+      }
+
+      .navbar-light .navbar-nav .nav-link {
+        color: #666363;
+        transition: color 0.5s ease;
+      }
+
+      .navbar.scrolled {
+        background-color: #0056b3;
+      }
+
+      .navbar-light.scrolled .navbar-nav .nav-link {
+        color: #ffffff;
+      }
+
+      .carousel-caption {
+        background-color: rgba(0, 123, 255, 0.7);
+        color: #201f1f;
+      }
+
+      .about-section,
+      .brand-section,
+      .contact-section {
+        opacity: 0;
+        transition: opacity 1s ease;
+      }
+
+      .about-section.show,
+      .brand-section.show,
+      .contact-section.show {
+        opacity: 1;
+      }
+
+      .brand-section .card {
+        border-radius: 20px;
+        overflow: hidden;
+        position: relative;
+        transition: transform 0.5s ease;
+      }
+
+      .brand-section .card:hover {
+        transform: scale(1.1);
+      }
+
+      .brand-section .card img {
+        transition: transform 0.5s ease;
+      }
+
+      .brand-section .card:hover img {
+        transform: scale(1.1);
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+      <a class="navbar-brand" href="#">Your Brand</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#brand">Brand</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" style="padding-top: 106px">
+      <div id="carouselExample" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="Images/gi.jpg" class="d-block w-100" alt="Image 1" />
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Your Brand Name</h2>
+              <p>Some text over the image</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="Images/gi2.jpg" class="d-block w-100" alt="Image 2" />
+            <div class="carousel-caption d-none d-md-block">
+              <h2>Your Brand Name</h2>
+              <p>Some text over the image</p>
+            </div>
+          </div>
+          <!-- Add more carousel items as needed -->
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-light" style="padding-top: 106px">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <img src="Images/gi3.jpg" alt="About Image" class="img-fluid" />
+          </div>
+          <div class="col-md-6 about-section">
+            <h2>About Us</h2>
+            <p>Your about us content goes here.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Brand Section -->
+    <section id="brand" style="padding-top: 106px">
+      <div class="container text-center">
+        <h2>Our Brands</h2>
+      </div>
+      <div class="container brand-section">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="Images/gi3.jpg"
+                class="card-img-top brand-img"
+                alt="Brand Image 1"
+              />
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="Images/gi3.jpg"
+                class="card-img-top brand-img"
+                alt="Brand Image 2"
+              />
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="Images/gi3.jpg"
+                class="card-img-top brand-img"
+                alt="Brand Image 3"
+              />
+            </div>
+          </div>
+          <!-- Add more columns and cards as needed -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-light" style="padding-top: 106px">
+      <div class="container contact-section">
+        <h2>Contact Us</h2>
+        <p>Email: your.email@example.com</p>
+        <p>Follow us on social media:</p>
+        <!-- Add your social media icons and links here -->
+      </div>
+    </section>
+
+    <!-- Bootstrap JS and jQuery (Make sure to include Popper.js before Bootstrap JS) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(window).scroll(function () {
+          $(".about-section, .brand-section, .contact-section").each(
+            function () {
+              var elementTop = $(this).offset().top;
+              var elementBottom = elementTop + $(this).outerHeight();
+              var viewportTop = $(window).scrollTop();
+              var viewportBottom = viewportTop + $(window).height();
+              if (elementBottom > viewportTop && elementTop < viewportBottom) {
+                $(this).addClass("show");
+              }
+            }
+          );
+        });
+      });
+    </script>
+  </body>
+</html>
